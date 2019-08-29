@@ -1,29 +1,24 @@
 {
-  "name": "typescript-react-publish-component-demo--my-component",
-  "version": "0.1.1",
-  "main": "./dist/MyComponent.js",
+  "name": "typescript-react-webpack-publish-component-demo--my-component",
+  "version": "0.2.1",
+  "main": "./dist/bundle.js",
   "types": "./dist/MyComponent.d.ts",
   "scripts": {
-    "dist": "rm -rf ./dist && tsc"
+    "dist": "rm -rf ./dist && webpack"
   },
   "devDependencies": {
+    "@purtuga/esm-webpack-plugin": "1.0.1",
     "@types/node": "12.7.2",
     "@types/react": "16.9.2",
-    "@types/react-dom": "16.9.0",
     "css-loader": "3.2.0",
-    "html-webpack-plugin": "3.2.0",
-    "source-map-loader": "0.2.4",
     "style-loader": "1.0.0",
     "ts-loader": "6.0.4",
     "typescript": "3.5.3",
     "webpack": "4.39.3",
     "webpack-cli": "3.3.7",
-    "webpack-dev-server": "3.8.0",
-    "react": "16.9.0",
-    "react-dom": "16.9.0"
+    "react": "16.9.0"
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0"
   }
 }
