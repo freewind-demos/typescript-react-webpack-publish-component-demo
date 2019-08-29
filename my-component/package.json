@@ -1,11 +1,10 @@
 {
+  "name": "typescript-react-publish-component-demo--my-component",
+  "version": "0.1.1",
+  "main": "./dist/MyComponent.js",
+  "types": "./dist/MyComponent.d.ts",
   "scripts": {
-    "demo": "webpack-dev-server --open"
-  },
-  "dependencies": {
-    "react": "16.9.0",
-    "react-dom": "16.9.0",
-    "typescript-react-publish-component-demo--my-component": "0.1.1"
+    "dist": "rm -rf ./dist && tsc"
   },
   "devDependencies": {
     "@types/node": "12.7.2",
@@ -19,6 +18,12 @@
     "typescript": "3.5.3",
     "webpack": "4.39.3",
     "webpack-cli": "3.3.7",
-    "webpack-dev-server": "3.8.0"
+    "webpack-dev-server": "3.8.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
   }
 }
